@@ -1,7 +1,5 @@
 package javafxapplication.Proxy;
 
-import javafxapplication.Controller.User.ListUserController;
-
 /**
  * Created with IntelliJ IDEA.
  * User: Admin
@@ -11,7 +9,4 @@ import javafxapplication.Controller.User.ListUserController;
  */
 public class UserProxy extends Proxy {
 
-    public static ListUserController getUsers() {
-        return User;
-    }
 }

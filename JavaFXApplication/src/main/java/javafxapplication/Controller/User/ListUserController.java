@@ -1,16 +1,11 @@
 package javafxapplication.Controller.User;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafxapplication.Model.User;
 import javafxapplication.Proxy.UserProxy;
 
 import java.net.URL;
-import java.util.Arrays;
-import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -27,12 +22,6 @@ public class ListUserController implements Initializable {
         TableView tableView1;
 
         UserProxy sellerProxy = new UserProxy();
-    public void textTolukta(ActionEvent actionEvent) {
-        List<ListUserController> sellers = Arrays.asList(UserProxy.getUsers());
-
-
-        tableView1.getItems().setAll(users);
-    }
 
 
 }
