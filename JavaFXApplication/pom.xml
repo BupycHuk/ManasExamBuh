@@ -27,6 +27,21 @@
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.13</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.xbean</groupId>
+            <artifactId>xbean-reflect</artifactId>
+            <version>3.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons</artifactId>
+            <version>1.6.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.2.1.Final</version>
+        </dependency>
     </dependencies>
 
     <repositories>

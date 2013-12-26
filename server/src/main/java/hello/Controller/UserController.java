@@ -1,13 +1,8 @@
 package hello.Controller;
 
-import hello.Config;
-import hello.Model.*;
-import hello.Model.Repository.UserRepository;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,6 +14,15 @@ import org.springframework.web.bind.annotation.*;
 
 @Component
 @Controller
-public class UserController {
-}
+public class UserController
+{
 
+}
+class SchetController
+{
+    @RequestMapping("View/schet")
+   public void callMe()
+   {
+
+   }
+}
