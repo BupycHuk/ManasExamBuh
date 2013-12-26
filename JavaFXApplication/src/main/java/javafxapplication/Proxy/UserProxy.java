@@ -1,5 +1,6 @@
 package javafxapplication.Proxy;
 
+import javafxapplication.Model.AddUserRequest;
 import javafxapplication.Model.User;
 
 /**
@@ -11,4 +12,19 @@ import javafxapplication.Model.User;
  */
 public class UserProxy extends Proxy {
 
+    public boolean addUser(AddUserRequest addUserRequest)
+    {
+        try {
+            restTemplate.postForObject(urlService.GetServerUrl("/addUser/"), addUserRequest, User.class);
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+        return true;
+
+    }
+    public User[] getUsers() {
+        return restTemplate.getForObject(urlService.GetServerUrl("/users/"), User[].class);
+    }
 }

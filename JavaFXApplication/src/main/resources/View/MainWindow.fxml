@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.geometry.Insets?>
-<VBox id="AnchorPane" prefHeight="500.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.Controller.MainController">
+<VBox id="AnchorPane" prefHeight="500.0" prefWidth="392.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication.Controller.MainController">
     <children>
         <MenuBar>
             <menus>
-                <Menu text="Колдонуучулар">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="Колдонуучулардын тизмеси" onAction="#listSeller"/>
-                    </items>
+                <Menu text="Колдонучулар">
+                    <MenuItem mnemonicParsing="false" onAction="#addUser" text="Колдонучу кошуу" />
+                    <MenuItem mnemonicParsing="false" onAction="#listUser" text="Колдонучулардын тизмеси" />
                 </Menu>
             </menus>
         </MenuBar>
         <VBox fx:id="vbox">
             <VBox.margin>
-                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
             </VBox.margin>
         </VBox>
     </children>

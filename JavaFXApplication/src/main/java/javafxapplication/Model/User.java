@@ -12,50 +12,50 @@ package javafxapplication.Model;
  */
 
 public class User {
-    private long id;
-    private String fullName;
-    private String login;
-    private String password;
+    private long Id;
+    private String UserName;
+    private String Email;
+    private String Password;
 
     protected User() {}
 
-    public User(String firstName, String lastName, String password) {
-        this.fullName = firstName;
-        this.login = lastName;
-        this.password = password;
+    public User(String userName, String email, String password) {
+        this.UserName = userName;
+        this.Email = email;
+        this.Password = password;
     }
 
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
 
     public long getId() {
-        return id;
+        return Id;
     }
-    public void setId(long Id)
-    {
-        this.id = Id;
+
+    public void setId(long id) {
+        Id = id;
+    }
+
+    public String getUserName() {
+        return UserName;
+    }
+
+    public void setUserName(String userName) {
+        UserName = userName;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
     }
 
     public String getPassword() {
-        return password;
+        return Password;
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        Password = password;
     }
 }
 
