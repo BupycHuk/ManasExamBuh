@@ -1,30 +1,27 @@
-package hello.Model;
+package hello.Model.RequestDto;
+import java.security.Timestamp;
 
-import javax.persistence.*;
-
-@Entity
-public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+/**
+ * Created with IntelliJ IDEA.
+ * User: admin
+ * Date: 07.01.14
+ * Time: 14:49
+ * To change this template use File | Settings | File Templates.
+ */
+public class AddUserRequest {
     private long id;
-
-
-    @Column(name="name")
     private String name;
-    @Column(name="email")
     private String email;
-    @Column(name="password")
     private String password;
-    @Column(name="create_time TIMESTAMP")
-    private String create_time;
+    protected Timestamp create_time;
+    public AddUserRequest(){
 
-    protected User(){}
-    public User(String name, String email, String password,String create_time) {
+    }
+    public AddUserRequest(String name, String email, String password ){
+
         this.name = name;
         this.email = email;
         this.password = password;
-        this.create_time = create_time;
     }
 
     public long getId() {
@@ -35,7 +32,6 @@ public class User {
         this.id = Id;
     }
 
-
     public String getName() {
         return name;
     }
@@ -43,6 +39,7 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public String getEmail() {
         return email;
@@ -60,11 +57,5 @@ public class User {
         this.password = password;
     }
 
-    public String getCreate_time() {
-        return create_time;
-    }
 
-    public void setCreate_time(String create_time) {
-        this.create_time = create_time;
-    }
 }
